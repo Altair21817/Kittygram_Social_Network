@@ -1,5 +1,5 @@
-IP: 84.201.165.146
-name_taski: https://altair21817.sytes.net/
-name_kittygram: https://kittygramplus.ddns.net/
-login: admin
-password: admin
+IP: 84.201.165.146;
+name_taski: https://altair21817.sytes.net/;
+name_kittygram: https://kittygramplus.ddns.net/;
+login: admin;
+password: admin;
