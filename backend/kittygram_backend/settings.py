@@ -10,7 +10,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '84.201.165.146', 'kittygramplus.ddns.net']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', os.getenv('CLOUD_IP'), os.getenv('PRIVATE_DNC')]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
