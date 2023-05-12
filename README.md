@@ -99,19 +99,14 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-✅ Update ALLOWED_HOSTS in the Django project's settings
-
-```
-nano backend/kittygram_backend/settings.py
-# ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'you.ya.cloud.ip', 'youdomainname']
-```
-
 ✅ Create the .env file and fill up according the .env.excample file
 
 ```
 touch .env
 nano .env
-# SECRET_KEY = <your_secret_key>
+# SECRET_KEY=<your_secret_key>
+# PRIVATE_DNC=<yourprivatednc>
+# CLOUD_IP=<you.ya.cloud.ip>
 ```
 
 ✅ Navigate to the backend folder and apply migrations
