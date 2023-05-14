@@ -8,12 +8,18 @@ A cute social network with hundreds... no, thousands... no, billions of cats!
 
 ___
 
-### FEATURES
+### PROJECT DESCRIPTION
+
+Welcome to Kittygram, the ultimate platform for cat lovers! Create accounts, build cat profiles, and connect with a vibrant community of fellow feline enthusiasts. Showcase your cats' photos, names, birthdays, achievements, and explore adorable profiles, leaving comments to engage in delightful conversations. Join Kittygram and celebrate the wonderful world of cats!
+
+Key features:
+
 😸 Post yout own cute cats!
 
-😻 ️Subscribe to other!
+😻 ️Subscribe to other and comment!
 
 😸 Have fun!
+
 
 ___
 
@@ -81,7 +87,7 @@ sudo apt install nginx -y
 ✅ Clone the "Kittygram" repository and navigate to it
 
 ```
-https://github.com/Altair21817/infra_sprint1.git
+git clone https://github.com/Altair21817/infra_sprint1.git
 cd infra_sprint1
 ```
 
