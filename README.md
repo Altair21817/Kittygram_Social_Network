@@ -87,8 +87,9 @@ sudo apt install nginx -y
 ✅ Clone the "Kittygram" repository and navigate to it
 
 ```
-git clone https://github.com/Altair21817/infra_sprint1.git
-cd infra_sprint1
+git clone https://github.com/Altair21817/Kittygram_Social_Network
+.git
+cd Kittygram_Social_Network
 ```
 
 ✅ Create and activate a virtual environment
@@ -200,8 +201,8 @@ After=network.target
 
 [Service]
 User=<system-username>
-WorkingDirectory=/home/<system-username>/infra_sprint1/backend/
-ExecStart=/home/<system-username>/infra_sprint1/venv/bin/gunicorn --bind 0.0.0.0:8000 kittygram_backend.wsgi
+WorkingDirectory=/home/<system-username>/Kittygram_Social_Network/backend/
+ExecStart=/home/<system-username>/Kittygram_Social_Network/venv/bin/gunicorn --bind 0.0.0.0:8000 kittygram_backend.wsgi
 
 [Install]
 WantedBy=multi-user.target
@@ -227,8 +228,8 @@ You can also open <http://you.ya.cloud.ip:8000/api/> (e.g., <http://11.111.111.
 ✅ Copy the frontend and backend static to the system default static folder, replacing `<system-username>` with your actual data
 
 ```
-sudo cp -r /home/<system-username>/infra_sprint1/frontend/build/. /var/www/infra_sprint1/
-sudo cp -r /home/<system-username>/infra_sprint1/backend/static_backend/ /var/www/infra_sprint1/
+sudo cp -r /home/<system-username>/Kittygram_Social_Network/frontend/build/. /var/www/Kittygram_Social_Network/
+sudo cp -r /home/<system-username>/Kittygram_Social_Network/backend/static_backend/ /var/www/Kittygram_Social_Network/
 ```
 
 ✅ Create local folder to collect media and update rules, replacing `<system-username>` 3 times with your actual data: 
@@ -251,6 +252,7 @@ Replace everything with the following code (replace `<you.ya.cloud.ip>` and `<yo
 
 ```
 server {
+
     listen 80;
     server_name <you.ya.cloud.ip> <youdomainname>;
 
@@ -267,10 +269,11 @@ server {
     }
 
     location / {
-        root /var/www/infra_sprint1;
+        root /var/www/Kittygram_Social_Network;
         index index.html index.htm;
         try_files $uri /index.html;
     }
+
 }
 ```
 
